@@ -1,0 +1,148 @@
+$msh_small: 782px;
+
+* {
+  box-sizing: inherit;
+}
+
+#wpcontent {
+  padding-left: 0;
+}
+
+.auto-fold { 
+  #wpcontent {
+    padding-left: 0;
+  }
+}
+
+#bsd-plugin-boilerplate-settings {
+  .components-placeholder {
+    background: #f6f6f6;
+    margin-top: 25vh;
+    margin-bottom: 25vh;
+  }
+
+  .bsd-plugin-boilerplate-header {
+    padding: 20px 10px;
+    background-color: #ffffff;
+    box-shadow: 0 1px 0 rgba(213,213,213,0.5),0 1px 2px #eee;
+
+    .bsd-plugin-boilerplate-container {
+      margin: 0 auto;
+      max-width: 750px;
+
+      .bsd-plugin-boilerplate-logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+
+  .bsd-plugin-boilerplate-main {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 750px;
+
+    @media screen and (max-width: $msh_small) {
+      margin-left: 1em;
+      margin-right: 1em;
+    }
+
+    .components-panel__body {
+      margin: 25px 0;
+      background: #fff;
+      border: 1px solid #e2e4e7;
+
+      .components-panel__body-toggle {
+        border-bottom: 1px solid #d6e2ed;
+      }
+
+      .components-panel__row {
+        padding: 10px;
+        margin: 0;
+
+        .components-base-control {
+          .components-base-control__field {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 10px;
+            flex-direction: column;
+          }
+
+          &.bsd-plugin-boilerplate-text-field {            
+
+            .components-base-control__field {
+              label {
+                font-weight: 600;
+                margin-bottom: 10px;
+                margin-right: 1em;
+                width: 100%;
+                max-width: 100%;
+
+                @media screen and (max-width: $msh_small) {
+                  width: 100%;
+                }
+              }
+
+              input {
+                width: 100%;
+                max-width: 10rem;                          
+              }
+
+              .components-select-control__input {
+                width: 70%;
+                max-width: 100%;
+
+                @media screen and (max-width: $msh_small) {
+                  width: 100%;
+                }
+
+                &:disabled {
+                  background: #f6f6f6;
+                  border-color: #eeeeee;
+                  color: #bbbbbb;
+                }
+
+                &:focus {
+                  border-color: #00a0d2;
+                  box-shadow: 0 0 0 1px #00a0d2;
+                  outline: 2px solid transparent;
+                  outline-offset: -2px;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .bsd-plugin-boilerplate-product-settings {
+        flex-direction: column;
+        align-items: flex-start;
+
+        p {
+          margin-bottom: .25em;
+        }
+        .bsd-plugin-boilerplate-menu-link {
+          margin-top: .25em;
+          color: #007cba;
+          text-decoration: underline;
+          
+          &:hover,
+          &:active {
+            color: #005a87;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}
+
+#bsd-plugin-boilerplate-notice {
+  top: 2em;  
+
+  .components-snackbar {
+    float: right;
+    margin-right: 1em;
+  }
+}
