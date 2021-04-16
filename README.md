@@ -66,7 +66,7 @@ Creating your plugin settings requires two steps, and an optional third:
 
 ## Backlog
 
-1. Add a script to ZIP only the files necessary for plugin distribution (e.g., ignore `node-modules`, `blocks\app`)
+1. Add a Gulp script to ZIP only the files necessary for plugin distribution (e.g., ignore `node-modules`, `blocks\app`)
 1. Add a script to rename files, variables, and constants with your plugin name and slug
 1. Add PHPUnit for PHP unit tests
 1. Add React Testing Library for React component testing
