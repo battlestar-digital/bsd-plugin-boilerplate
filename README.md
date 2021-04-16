@@ -64,6 +64,14 @@ Creating your plugin settings requires two steps, and an optional third:
         1. Refer to the [Block Editor Handbook](https://developer.wordpress.org/block-editor/components/) for components you can use, such as the CheckboxControl, SelectControl, and TextareaControl
 1. Optionally, but highly recommended, is to clean up after yourself. Add your setting to the array in `uninstall.php`
 
+## Deployment
+
+This boilerplate includes scripts that will allow you to package it for deployment. While these are optional -- you can certainly package it by hand -- we highly recommend their use to streamline your plugin process.
+
+### Setup
+
+1. Install gulp globally: `npm install --global gulp-cli`
+
 ## Backlog
 
 1. Add a Gulp script to ZIP only the files necessary for plugin distribution (e.g., ignore `node-modules`, `blocks\app`)
