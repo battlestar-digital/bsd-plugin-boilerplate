@@ -1,0 +1,31 @@
+{
+  "name": "bsd-plugin-boilerplate",
+  "version": "1.0.0",
+  "description": "This modern boilerplate template uses namespaces for PHP and React for plugin settings.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/battlestar-digital/bsd-plugin-boilerplate.git"
+  },
+  "keywords": [
+    "wordpress",
+    "wordpress-plugin",
+    "wordpress-boilerplate",
+    "wordpress-plugin-boilerplate",
+    "wordpress-react"
+  ],
+  "author": "Battlestar Digital",
+  "license": "GPLv3",
+  "bugs": {
+    "url": "https://github.com/battlestar-digital/bsd-plugin-boilerplate/issues"
+  },
+  "homepage": "https://github.com/battlestar-digital/bsd-plugin-boilerplate#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-clean": "^0.4.0",
+    "gulp-zip": "^5.1.0"
+  }
+}
