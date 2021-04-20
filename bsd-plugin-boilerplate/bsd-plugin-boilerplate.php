@@ -19,7 +19,7 @@ if ( !function_exists('add_action') ) {
 }
 
 // Setup
-define( 'BSD_PLUGIN_BOILERPLATE_URL', __FILE__ );
+defined( 'BSD_PLUGIN_BOILERPLATE_URL' ) or define( 'BSD_PLUGIN_BOILERPLATE_URL', __FILE__ );
 
 // Includes
 include( 'includes/activate.php' );
